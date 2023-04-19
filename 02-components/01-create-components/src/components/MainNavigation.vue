@@ -1,19 +1,23 @@
 <script setup>
-defineProps({
+const props = defineProps({
   // title: String
   title: {
     type: String,
-    required: true,
+    required: true
     // default: 'App'
   }
 })
+
+function alertTitle() {
+  alert(props.title)
+}
 </script>
 
 <template>
   <nav>
     <ul>
       <li>
-        <a href ="/">{{ title }}</a>
+        <a href="/" @click="alertTitle">{{ title }}</a>
       </li>
       <li>
         <a href="https://training360.com">Training360</a>
