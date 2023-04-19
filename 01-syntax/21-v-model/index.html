@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-model</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <form action="">
+        <div class="form-group">
+
+          <!-- <label for="name1">Name 1:</label>
+          <input 
+          type="text" 
+          id="name1" 
+          name="name1" 
+          :value="name1" 
+          @input="handleName1Change($event)">
+          <p>{{ name1 }}</p> -->
+
+          <label for="name2">Name 2:</label>
+          <input 
+            type="text" 
+            id="name2" 
+            name="name2" 
+            v-model="name2">
+          <p>{{ name2 }}</p>
+
+        </div>
+      </form>
+    <script src="main.js"></script>
+  </body>
+</html>
