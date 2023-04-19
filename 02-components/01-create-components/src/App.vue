@@ -5,7 +5,7 @@ import SiteFooter from './components/SiteFooter.vue';
 </script>
 
 <template>
-  <MainNavigation />
+  <MainNavigation title="Vue.js"/>
   <SiteContent />
   <SiteFooter />
 </template>

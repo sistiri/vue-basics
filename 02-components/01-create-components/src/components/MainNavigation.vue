@@ -1,10 +1,19 @@
-<script setup></script>
+<script setup>
+defineProps({
+  // title: String
+  title: {
+    type: String,
+    required: true,
+    // default: 'App'
+  }
+})
+</script>
 
 <template>
   <nav>
     <ul>
       <li>
-        <a href ="/">Vue app</a>
+        <a href ="/">{{ title }}</a>
       </li>
       <li>
         <a href="https://training360.com">Training360</a>
