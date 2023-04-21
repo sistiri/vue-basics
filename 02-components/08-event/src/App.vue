@@ -2,12 +2,17 @@
 import InputField from './components/InputField.vue';
 
 function alertMessage() {
-  alert('Input is focused')
+  alert('Input 1 is focused')
 }
+
+function logMessage(name) {
+  console.log(name)
+}
+
 </script>
 
 <template>
- <InputField @on-focus="alertMessage"/>
+ <InputField @on-focus="alertMessage" @on-input="logMessage"/>
 </template>
 
 <style scoped>
